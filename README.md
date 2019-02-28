@@ -8,7 +8,7 @@
    `git clone https://github.com/trvswgnr/db-push-pull.git`
 
 1. Navigate inside folder and rename .env-example
-   `cd ./db-push-pull/ && mv ./.env-example ./.env
+   `cd ./db-push-pull/ && mv ./.env-example ./.env`
 
 1. Set all environment variables in .env
 
