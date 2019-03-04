@@ -89,7 +89,7 @@ fi
 
 # drop db and create empty one with same name
 echo "Deleting existing remote DB and replacing..."
-ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "mysql --user=$REMOTE_DB_USER --password=$REMOTE_DB_PASSWORD --execute='DROP DATABASE IF EXISTS $REMOTE_DB; CREATE DATABASE $REMOTE_DB;'"
+ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "mysql --user=$REMOTE_DB_USER --password='$REMOTE_DB_PASSWORD' --execute='DROP DATABASE IF EXISTS $REMOTE_DB; CREATE DATABASE $REMOTE_DB;'"
 errorcheck
 
 # replace the remote db with the download
